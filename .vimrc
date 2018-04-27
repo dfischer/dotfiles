@@ -42,6 +42,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'https://github.com/majutsushi/tagbar'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/valloric/youcompleteme'
+Plug 'https://github.com/easymotion/vim-easymotion'
 
 call plug#end()
 
