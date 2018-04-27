@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/DFischer/.vim'
+let g:netrw_dirhist_2='/home/DFischer/.zprezto'
+let g:netrw_dirhist_3='/home/DFischer/code/connect/functions/src'
+let g:netrw_dirhist_4='/home/DFischer/code/edvo/functions'
