@@ -6,6 +6,7 @@ nmap ; :Buffers<CR>
 nmap <Leader>t :Files <CR>
 nmap <Leader>r :Tags<CR>
 nmap <Leader>a :Ag<CR>
+nmap <Leader>T :TagbarToggle<CR>
 
 set pastetoggle=<Leader>p
 
@@ -17,8 +18,7 @@ set expandtab
 
 " ----------------------------------------------------------------------------
 " Plugs
-" ----------------------------------------------------------------------------
-
+" ---------------------------------------------------------------------------- 
 
 call plug#begin('~/.vim/plugged')
 
@@ -39,6 +39,9 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'https://github.com/drewtempelmeyer/palenight.vim'
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'https://github.com/majutsushi/tagbar'
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/valloric/youcompleteme'
 
 call plug#end()
 
@@ -99,3 +102,23 @@ python3 del powerline_setup
 " ----------------------------------------------------------------------------
 
 set noswapfile
+
+
+" ----------------------------------------------------------------------------
+" Tagbar
+" ----------------------------------------------------------------------------
+"
+
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
